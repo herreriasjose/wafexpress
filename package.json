@@ -1,0 +1,36 @@
+{
+  "name": "wafexpress",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env ENV=production nodemon ./server.js",
+    "dev:start": "cross-env ENV=development nodemon ./server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.1.0",
+    "jsdoc": "^3.5.5",
+    "nodemon": "^1.18.10"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "colors": "^1.3.3",
+    "config": "^3.0.1",
+    "express": "^4.16.4",
+    "valid-url": "^1.0.9",
+    "winston": "^3.2.1"
+  }
+}
