@@ -27,6 +27,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "colors": "^1.3.3",
     "config": "^3.0.1",
     "express": "^4.16.4",
