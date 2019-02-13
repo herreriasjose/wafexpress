@@ -1,13 +1,13 @@
 const express = require('express');
 
-const waf = require('./lib/wafexpress');
+const waf = require('./lib/wafnode');
 const logger = require('./lib/logger');
 
 const app = express();
 
 const port = 8080;
 
-app.use(waf);
+app.use(waf({ option1: '1', option2: '2' }));
 app.get('/', (req, res) => {
   res.send('Hello, World!');
 });

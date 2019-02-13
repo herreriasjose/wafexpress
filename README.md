@@ -1,8 +1,8 @@
-# WafExpress
+# Wafnode
 
-WafExpress is a middleware Web Application Firewall.
+Wafnode is a middleware Web Application Firewall initially designed to work with Express.
 
-WafExpress monitors the requests on our server and acts in case there are suspicious indications.
+It monitors the requests on our server and acts in case there are suspicious indications.
 
 
 ## Features
