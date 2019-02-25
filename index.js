@@ -9,10 +9,14 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 const port = 8080;
 
+let suspects = [];
 
-app.use(waf({ modules: ["ScannerSQLInjection","ScannerXSSAttack"], option2: '2' }));
+app.use(waf({ modules: ["ScannerSQLInjection","ScannerXSSAttack"], suspects: suspects, option3: 3 }));
+
 app.get('/', (req, res) => {
+  
   res.sendFile('index.html');
+  
 });
 app.post('/api/scan', (req, res) => {
   res.send("Reached endpoint")
