@@ -26,7 +26,7 @@ describe('module ScannerSQLIjection utilities', () => {
     expect(scanner.requestParsed.length).toBe(13)
   } );
 
-  it('should return 13' , ()=> { 
+  it('should return 25' , ()=> { 
     scanner.getText({value: 'dummy'});
     expect(scanner.requestParsed.length).toBe(25)
   } );
