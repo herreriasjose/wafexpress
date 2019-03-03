@@ -17,7 +17,7 @@ It monitors the requests on our server and acts in case there are suspicious ind
 
 ``` bash
 git clone project_uri
-npm start
+npm run dev:start
 ```
 
 ### Prerequisites
