@@ -7,7 +7,7 @@ describe('module ScannerSQLInjection suite', () => {
   });
 });
 
-describe('module ScannerSQLIjection regex match', () => {
+describe('module ScannerSQLIjection regex match header attack', () => {
   const scanner = new ScannerSQLInjection();
   const digest = {
     header: 'dummy‘ or 1=1;--dummy'
@@ -16,3 +16,15 @@ describe('module ScannerSQLIjection regex match', () => {
   scanner.scan(digest, suspects);
   expect(suspects.length).toBe(1);
 });
+
+
+describe('module ScannerSQLIjection regex match body attack', () => {
+  const scanner = new ScannerSQLInjection();
+  const digest = {
+    body: 'name=dummy&password=%E2%80%98+or+1%3D1%3B--'
+  };
+  const suspects = [];
+  scanner.scan(digest, suspects);
+  expect(suspects.length).toBe(1);
+});
+
