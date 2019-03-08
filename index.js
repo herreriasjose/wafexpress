@@ -13,6 +13,9 @@ const port = 8080;
 let suspects = [];
 
 app.use(wafNode({ modules: ["ScannerSQLInjection","ScannerXSSAttack"], suspects: suspects, option3: 3 }));
+ 
+
+ 
 
 
 app.get('/', (req, res) => {
