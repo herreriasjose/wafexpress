@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env ENV=production nodemon ./server.js",
-    "dev:start": "cross-env ENV=development nodemon ./server.js",
+    "dev": "cross-env ENV=development nodemon ./server.js",
     "test": "cross-env ENV=test  jest"
   },
   "keywords": [],
