@@ -26,14 +26,16 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/scan', (req, res) => {
-  console.log('Current IP:',getIP(req))
-  console.log('Url: /api/scan Method: POST',suspects)
+  logger.info('Current IP:',getIP(req))
+  logger.info('Url: /api/scan Method: POST')
+  logger.info(JSON.stringify(suspects));
   res.send("Reached endpoint")
 });
 
 app.get('/api/scan', (req, res) => {
-  console.log('Current IP:',getIP(req))
-  console.log('Url: /api/scan Method: GET',suspects)
+  logger.info('Current IP:',getIP(req))
+  logger.info('Url: /api/scan Method: GET')
+  logger.info(JSON.stringify(suspects));
   res.send("Reached endpoint")
 });
 
