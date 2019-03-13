@@ -44,7 +44,6 @@ describe('module ScannerSQLInjection suite', () => {
     };
    
     scanner.scan(digest, suspects);
-    console.log('fix',suspects)
     expect(suspects[0].warnings).toBeGreaterThan(0);
   });
 
