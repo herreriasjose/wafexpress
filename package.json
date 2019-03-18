@@ -2,10 +2,9 @@
   "name": "wafnode",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "cross-env ENV=production nodemon ./server.js",
-    "dev": "cross-env ENV=development nodemon ./server.js",
+    "start": "cross-env ENV=production nodemon ./serverNode.js",
+    "dev": "cross-env ENV=development nodemon ./serverNode.js",
     "test": "cross-env ENV=test  jest"
   },
   "keywords": [],
