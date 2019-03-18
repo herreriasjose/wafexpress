@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "start": "cross-env ENV=production nodemon ./serverNode.js",
-    "dev": "cross-env ENV=development nodemon ./serverNode.js",
+    "start": "cross-env ENV=production nodemon ./serverExpress.js",
+    "dev": "cross-env ENV=development nodemon ./serverExpress.js",
     "test": "cross-env ENV=test  jest"
   },
   "keywords": [],
