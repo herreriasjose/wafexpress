@@ -39,4 +39,4 @@ app.get('/api/scan', (req, res) => {
 });
 
 app.listen(port);
-logger.info(`Serving at port ${port}`);
+logger.info(`Express server listening at port ${port}`);

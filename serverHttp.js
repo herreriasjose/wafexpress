@@ -14,4 +14,4 @@ let handler = function (req, res) {
 server.addListener('request', handler);
 server.listen(port);
 
-logger.info(`Http module server listening on port ${port}`);
+logger.info(`Http module server listening at port ${port}`);
